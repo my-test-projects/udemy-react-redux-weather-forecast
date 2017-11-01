@@ -4,7 +4,7 @@ import { API_BASE_URL } from './../consts/urls';
 
 export const fetchWeather = (city) => {
     const request = axios.get(`${API_BASE_URL}&q=${city},us`);
-    console.log("action: " + request);
+
     return {
         type: types.FETCH_WEATHER,
         payload: request
