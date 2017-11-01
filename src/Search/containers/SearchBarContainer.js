@@ -16,6 +16,12 @@ class SearchBarContainer extends Component {
     }
 }
 
+/*function mapPropsToState(state) {
+    return {
+        weather: state.weather
+    }
+}*/
+
 function mapDispatchToState(dispatch) {
     return bindActionCreators({ fetchWeather }, dispatch)
 }
